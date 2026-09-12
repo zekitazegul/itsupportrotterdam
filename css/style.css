@@ -1048,6 +1048,11 @@ Mobile
 
 @media (max-width: 600px) {
 
+.header-inner {
+    gap: 8px;
+}
+
+
  
 .container {
     width: 90%;
@@ -1172,6 +1177,11 @@ Small Mobile
 ========================================================= */
 
 @media (max-width: 400px) {
+
+.header-inner {
+    gap: 4px;
+}
+
 
  
 .container {
