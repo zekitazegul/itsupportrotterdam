@@ -2,7 +2,7 @@
 
   
 /* =====================================================
-   Zeta IT Services
+   ITSupportRotterdam
    Multilingual Site Script
    ===================================================== */
 
@@ -50,9 +50,9 @@ const translations = {
     en: {
 
         site: {
-            title: "Zeta IT Services | IT Support & Digital Solutions",
+            title: "ITSupportRotterdam | IT Support & Digital Solutions",
             description:
-                "Zeta IT Services provides practical IT support, PC maintenance, troubleshooting, hardware and software services, and professional WebCV creation."
+                "ITSupportRotterdam provides practical IT support, PC maintenance, troubleshooting, hardware and software services, and professional WebCV creation."
         },
 
         nav: {
@@ -118,10 +118,10 @@ const translations = {
         },
 
         about: {
-            eyebrow: "ABOUT ZETA IT SERVICES",
+            eyebrow: "ABOUT ITSupportRotterdam",
             title: "Technology made practical.",
             p1:
-                "Zeta IT Services provides practical IT support and digital services focused on clear communication, reliable solutions and professional service.",
+                "ITSupportRotterdam provides practical IT support and digital services focused on clear communication, reliable solutions and professional service.",
             p2:
                 "From solving everyday PC problems to creating a professional WebCV, the goal is simple: make technology work for you."
         },
@@ -162,7 +162,7 @@ const translations = {
 
         footer: {
             copyright:
-                "© 2026 Zeta IT Services. All rights reserved.",
+                "© 2026 ITSupportRotterdam. All rights reserved.",
             tagline:
                 "IT Support & Digital Solutions"
         }
@@ -177,9 +177,9 @@ const translations = {
     nl: {
 
         site: {
-            title: "Zeta IT Services | IT Support & Digitale Oplossingen",
+            title: "ITSupportRotterdam | IT Support & Digitale Oplossingen",
             description:
-                "Zeta IT Services biedt praktische IT-ondersteuning, pc-onderhoud, probleemoplossing, hardware- en softwarediensten en professionele WebCV-creatie."
+                "ITSupportRotterdam biedt praktische IT-ondersteuning, pc-onderhoud, probleemoplossing, hardware- en softwarediensten en professionele WebCV-creatie."
         },
 
         nav: {
@@ -245,10 +245,10 @@ const translations = {
         },
 
         about: {
-            eyebrow: "OVER ZETA IT SERVICES",
+            eyebrow: "OVER ITSupportRotterdam",
             title: "Technologie praktisch gemaakt.",
             p1:
-                "Zeta IT Services biedt praktische IT-ondersteuning en digitale diensten met aandacht voor duidelijke communicatie, betrouwbare oplossingen en professionele service.",
+                "ITSupportRotterdam biedt praktische IT-ondersteuning en digitale diensten met aandacht voor duidelijke communicatie, betrouwbare oplossingen en professionele service.",
             p2:
                 "Van het oplossen van dagelijkse pc-problemen tot het maken van een professioneel WebCV: het doel is eenvoudig, technologie voor u laten werken."
         },
@@ -289,7 +289,7 @@ const translations = {
 
         footer: {
             copyright:
-                "© 2026 Zeta IT Services. Alle rechten voorbehouden.",
+                "© 2026 ITSupportRotterdam. Alle rechten voorbehouden.",
             tagline:
                 "IT-ondersteuning & Digitale Oplossingen"
         }
@@ -304,9 +304,9 @@ const translations = {
     tr: {
 
         site: {
-            title: "Zeta IT Services | IT Desteği ve Dijital Çözümler",
+            title: "ITSupportRotterdam | IT Desteği ve Dijital Çözümler",
             description:
-                "Zeta IT Services; pratik IT desteği, PC bakımı, sorun giderme, donanım ve yazılım hizmetleri ve profesyonel WebCV hazırlama hizmetleri sunar."
+                "ITSupportRotterdam; pratik IT desteği, PC bakımı, sorun giderme, donanım ve yazılım hizmetleri ve profesyonel WebCV hazırlama hizmetleri sunar."
         },
 
         nav: {
@@ -372,10 +372,10 @@ const translations = {
         },
 
         about: {
-            eyebrow: "ZETA IT SERVICES HAKKINDA",
+            eyebrow: "ITSupportRotterdam HAKKINDA",
             title: "Teknolojiyi pratik hale getiriyoruz.",
             p1:
-                "Zeta IT Services; açık iletişim, güvenilir çözümler ve profesyonel hizmet anlayışına odaklanan pratik IT desteği ve dijital hizmetler sunar.",
+                "ITSupportRotterdam; açık iletişim, güvenilir çözümler ve profesyonel hizmet anlayışına odaklanan pratik IT desteği ve dijital hizmetler sunar.",
             p2:
                 "Günlük PC sorunlarını çözmekten profesyonel bir WebCV hazırlamaya kadar amaç basit: teknolojinin sizin için çalışmasını sağlamak."
         },
@@ -416,7 +416,7 @@ const translations = {
 
         footer: {
             copyright:
-                "© 2026 Zeta IT Services. Tüm hakları saklıdır.",
+                "© 2026 ITSupportRotterdam. Tüm hakları saklıdır.",
             tagline:
                 "IT Desteği & Dijital Çözümler"
         }
@@ -431,9 +431,9 @@ const translations = {
     ru: {
 
         site: {
-            title: "Zeta IT Services | IT-поддержка и цифровые решения",
+            title: "ITSupportRotterdam | IT-поддержка и цифровые решения",
             description:
-                "Zeta IT Services предоставляет практическую IT-поддержку, обслуживание ПК, диагностику, услуги по оборудованию и программному обеспечению, а также создание профессиональных WebCV."
+                "ITSupportRotterdam предоставляет практическую IT-поддержку, обслуживание ПК, диагностику, услуги по оборудованию и программному обеспечению, а также создание профессиональных WebCV."
         },
 
         nav: {
@@ -499,10 +499,10 @@ const translations = {
         },
 
         about: {
-            eyebrow: "О ZETA IT SERVICES",
+            eyebrow: "О ITSupportRotterdam",
             title: "Технологии — просто и практично.",
             p1:
-                "Zeta IT Services предоставляет практическую IT-поддержку и цифровые услуги с акцентом на понятное общение, надежные решения и профессиональный сервис.",
+                "ITSupportRotterdam предоставляет практическую IT-поддержку и цифровые услуги с акцентом на понятное общение, надежные решения и профессиональный сервис.",
             p2:
                 "От решения повседневных проблем ПК до создания профессионального WebCV — цель проста: сделать технологии полезными для вас."
         },
@@ -543,7 +543,7 @@ const translations = {
 
         footer: {
             copyright:
-                "© 2026 Zeta IT Services. Все права защищены.",
+                "© 2026 ITSupportRotterdam. Все права защищены.",
             tagline:
                 "IT-поддержка и цифровые решения"
         }
@@ -558,9 +558,9 @@ const translations = {
     uk: {
 
         site: {
-            title: "Zeta IT Services | IT-підтримка та цифрові рішення",
+            title: "ITSupportRotterdam | IT-підтримка та цифрові рішення",
             description:
-                "Zeta IT Services надає практичну IT-підтримку, обслуговування ПК, діагностику, послуги з обладнання та програмного забезпечення, а також створення професійних WebCV."
+                "ITSupportRotterdam надає практичну IT-підтримку, обслуговування ПК, діагностику, послуги з обладнання та програмного забезпечення, а також створення професійних WebCV."
         },
 
         nav: {
@@ -626,10 +626,10 @@ const translations = {
         },
 
         about: {
-            eyebrow: "ПРО ZETA IT SERVICES",
+            eyebrow: "ПРО ITSupportRotterdam",
             title: "Технології — просто й практично.",
             p1:
-                "Zeta IT Services надає практичну IT-підтримку та цифрові послуги з акцентом на зрозуміле спілкування, надійні рішення та професійний сервіс.",
+                "ITSupportRotterdam надає практичну IT-підтримку та цифрові послуги з акцентом на зрозуміле спілкування, надійні рішення та професійний сервіс.",
             p2:
                 "Від вирішення повсякденних проблем ПК до створення професійного WebCV — мета проста: зробити технології корисними для вас."
         },
@@ -670,7 +670,7 @@ const translations = {
 
         footer: {
             copyright:
-                "© 2026 Zeta IT Services. Усі права захищені.",
+                "© 2026 ITSupportRotterdam. Усі права захищені.",
             tagline:
                 "IT-підтримка та цифрові рішення"
         }
@@ -820,7 +820,7 @@ function applyTranslations(lang) {
     /* Save language */
 
     localStorage.setItem(
-        "zetaLanguage",
+        "itSupportLanguage",
         lang
     );
 
@@ -832,7 +832,7 @@ function applyTranslations(lang) {
    ===================================================== */
 
 const savedLanguage =
-    localStorage.getItem("zetaLanguage");
+    localStorage.getItem("itSupportLanguage");
 
 const browserLanguage =
     navigator.language
