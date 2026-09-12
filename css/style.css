@@ -1,4 +1,4 @@
-﻿/* =========================================================
+/* =========================================================
 ITSupportRotterdam
 Main Stylesheet
 ========================================================= */
@@ -157,6 +157,8 @@ margin-left: auto;
 position: relative;
 
  
+
+white-space: nowrap;
 font-size: 0.95rem;
 font-weight: 600;
 
@@ -1210,3 +1212,141 @@ Small Mobile
 
 }
 
+
+/* ---------- Why Us ---------- */
+
+.why-us-section {
+    background: var(--light);
+}
+
+.why-us-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.why-us-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 28px;
+}
+
+.why-us-number {
+    display: block;
+    color: var(--blue);
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    margin-bottom: 16px;
+}
+
+.why-us-card h3 {
+    color: var(--navy);
+    font-size: 1.15rem;
+    margin-bottom: 10px;
+}
+
+.why-us-card p {
+    color: var(--muted);
+}
+
+
+/* ---------- How It Works ---------- */
+
+.how-it-works-section {
+    background: var(--white);
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.step-card {
+    position: relative;
+    padding: 28px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: var(--white);
+}
+
+.step-number {
+    display: block;
+    color: var(--blue);
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    margin-bottom: 16px;
+}
+
+.step-card h3 {
+    color: var(--navy);
+    font-size: 1.15rem;
+    margin-bottom: 10px;
+}
+
+.step-card p {
+    color: var(--muted);
+}
+
+
+/* ---------- Service Area ---------- */
+
+.service-area-section {
+    background: var(--light);
+}
+
+.service-area-content {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    align-items: center;
+    gap: 64px;
+}
+
+.service-area-details {
+    padding: 28px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: var(--white);
+}
+
+.service-area-details p + p {
+    margin-top: 16px;
+}
+
+.service-area-details p {
+    color: var(--muted);
+}
+
+
+/* ---------- Responsive: New Sections ---------- */
+
+@media (max-width: 850px) {
+
+    .why-us-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .steps-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service-area-content {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .why-us-grid,
+    .steps-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

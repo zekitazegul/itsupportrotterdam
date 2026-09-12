@@ -1,4 +1,4 @@
-﻿document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
 
   
 /* =====================================================
@@ -10,69 +10,37 @@ const supportedLanguages = ["en", "nl", "tr", "ru", "uk"];
 
 const languages = {
     en: {
+
         flag: "🇬🇧",
         code: "EN",
-        name: "English"
-    },
-    nl: {
-        flag: "🇳🇱",
-        code: "NL",
-        name: "Nederlands"
-    },
-    tr: {
-        flag: "🇹🇷",
-        code: "TR",
-        name: "Türkçe"
-    },
-    ru: {
-        flag: "🇷🇺",
-        code: "RU",
-        name: "Русский"
-    },
-    uk: {
-        flag: "🇺🇦",
-        code: "UK",
-        name: "Українська"
-    }
-};
-
-
-/* =====================================================
-   Translations
-   ===================================================== */
-
-const translations = {
-
-    /* -------------------------------------------------
-       English
-       ------------------------------------------------- */
-
-    en: {
+        name: "English",
 
         site: {
-            title: "ITSupportRotterdam | IT Support & Digital Solutions",
+            title: "ITSupportRotterdam | Practical IT Support",
             description:
-                "ITSupportRotterdam provides practical IT support, PC maintenance, troubleshooting, hardware and software services, and professional WebCV creation."
+                "ITSupportRotterdam provides practical IT support for individuals, professionals and small businesses in Rotterdam and surrounding areas."
         },
 
         nav: {
             home: "Home",
             services: "Services",
+            whyUs: "Why Us",
             about: "About",
+            howItWorks: "How It Works",
             contact: "Contact"
         },
 
         cta: {
-            request: "Request a Service"
+            support: "Get IT Support"
         },
 
         hero: {
             eyebrow: "PRACTICAL IT SUPPORT",
-            titleStart: "IT solutions you can",
-            titleHighlight: "rely on.",
+            titleStart: "Practical IT Support",
+            titleHighlight: "You Can Rely On",
             text:
-                "Practical and reliable IT support for computers, software, hardware and everyday technology problems.",
-            request: "Request a Service",
+                "Reliable IT support for computers, software, hardware, networks and everyday technology problems in Rotterdam and surrounding areas.",
+            request: "Get IT Support",
             view: "View Services"
         },
 
@@ -80,40 +48,44 @@ const translations = {
             eyebrow: "WHAT I OFFER",
             title: "IT Services",
             text:
-                "Practical technology services for home users, professionals and small businesses.",
+                "Practical IT support for individuals, professionals and small businesses.",
 
             cards: {
-
-                support: {
-                    title: "IT Support",
+                computer: {
+                    title: "Computer & Laptop Support",
                     text:
-                        "Help with everyday computer, software, device and technology problems."
+                        "Help with computer and laptop problems, Windows issues, performance problems and everyday technical difficulties."
                 },
-
-                maintenance: {
-                    title: "PC Maintenance",
+                software: {
+                    title: "Windows, Microsoft Office & Software Support",
                     text:
-                        "PC cleaning, performance checks, updates and general maintenance."
+                        "Windows installation and configuration, Microsoft Office installation, licensing guidance, updates and software troubleshooting."
                 },
-
                 hardware: {
-                    title: "Hardware & Software",
+                    title: "Hardware, PC Upgrades & Maintenance",
                     text:
-                        "Hardware upgrades, software installation, configuration and updates."
+                        "Hardware upgrades, component replacement, PC maintenance, performance improvements and basic repairs."
                 },
-
-                troubleshooting: {
-                    title: "Troubleshooting",
+                network: {
+                    title: "Network & Wi-Fi Support",
                     text:
-                        "Diagnose and resolve common computer, software and device issues."
+                        "Home and small-business network setup, Wi-Fi problems, router configuration and connectivity troubleshooting."
                 },
-
+                remote: {
+                    title: "Remote IT Support",
+                    text:
+                        "Remote assistance for software problems, configuration, troubleshooting and everyday IT issues."
+                },
+                migration: {
+                    title: "Device Setup & Migration",
+                    text:
+                        "New computer setup, software installation, data migration and preparing devices for everyday use."
+                },
                 webcv: {
-                    title: "WebCV Creation",
+                    title: "WebCV & Digital Support",
                     text:
-                        "Professional personal CV websites designed for modern job applications."
+                        "Professional WebCV creation and practical digital support for individuals and job seekers."
                 }
-
             }
         },
 
@@ -121,23 +93,92 @@ const translations = {
             eyebrow: "ABOUT ITSupportRotterdam",
             title: "Technology made practical.",
             p1:
-                "ITSupportRotterdam provides practical IT support and digital services focused on clear communication, reliable solutions and professional service.",
+                "ITSupportRotterdam provides practical IT support for individuals, home users and small businesses. The focus is simple: understand the problem, explain the solution clearly and get your technology working properly again.",
             p2:
-                "From solving everyday PC problems to creating a professional WebCV, the goal is simple: make technology work for you."
+                "With experience in IT support, computer hardware, software troubleshooting, networking and digital technology, I provide personal support without unnecessary technical jargon."
+        },
+
+        whyUs: {
+            eyebrow: "WHY ITSupportRotterdam",
+            title: "Practical support with a personal approach.",
+            text:
+                "Personal IT support focused on solving the actual problem.",
+            cards: {
+                practical: {
+                    title: "Practical IT Support",
+                    text:
+                        "Straightforward solutions focused on solving the actual problem."
+                },
+                communication: {
+                    title: "Clear Communication",
+                    text:
+                        "Support available in English, Dutch, Turkish and Russian."
+                },
+                personal: {
+                    title: "Personal Service",
+                    text:
+                        "Direct and personal support instead of a large helpdesk."
+                },
+                remote: {
+                    title: "Remote & On-Site Support",
+                    text:
+                        "Remote or on-site support depending on the problem and location."
+                },
+                jargon: {
+                    title: "No Technical Jargon",
+                    text:
+                        "Clear explanations without unnecessary technical language."
+                }
+            }
+        },
+
+        howItWorks: {
+            eyebrow: "HOW IT WORKS",
+            title: "Simple from start to finish.",
+            text:
+                "A straightforward process designed to get your IT problem resolved.",
+            steps: {
+                contact: {
+                    title: "Contact",
+                    text:
+                        "Tell me what you need help with."
+                },
+                diagnose: {
+                    title: "Diagnose",
+                    text:
+                        "I identify the problem and explain the available solution."
+                },
+                fix: {
+                    title: "Fix",
+                    text:
+                        "The issue is resolved remotely or on-site, depending on the situation."
+                },
+                followUp: {
+                    title: "Follow-up",
+                    text:
+                        "Make sure everything is working properly and answer any remaining questions."
+                }
+            }
+        },
+
+        serviceArea: {
+            eyebrow: "SERVICE AREA",
+            title: "IT Support in Rotterdam & Surrounding Areas",
+            location:
+                "Based in Poortugaal, Rotterdam, providing practical IT support in the surrounding area.",
+            free:
+                "No travel fee in Poortugaal, Rhoon and Hoogvliet.",
+            other:
+                "For other areas, travel costs are included in the service fee."
         },
 
         contact: {
             eyebrow: "GET IN TOUCH",
-            title: "Need IT help?",
+            title: "Need IT help? Let's solve it.",
             text:
-                "Tell me what you need help with and I will get back to you.",
-            email: "Email me",
-            whatsapp: "WhatsApp",
-    areaTitle: "SERVICE AREA & TRANSPORT",
-    areaHeading: "Service Area & Transport",
-    areaLocation: "Based in Poortugaal, Rotterdam.",
-    areaFree: "No travel fee in Poortugaal, Rhoon and Hoogvliet.",
-    areaOther: "For other areas, travel costs are included in the service fee."
+                "Having a computer, software, network or other IT problem? Tell me what you need help with and let's find a practical solution.",
+            email: "Email Me",
+            whatsapp: "WhatsApp"
         },
 
         form: {
@@ -152,7 +193,7 @@ const translations = {
                 "Tell me what you need help with...",
             submit: "Send Request",
             success:
-                "Thank you. Your service request has been prepared."
+                "Thank you. Your service request has been sent."
         },
 
         menu: {
@@ -164,42 +205,42 @@ const translations = {
             copyright:
                 "© 2026 ITSupportRotterdam. All rights reserved.",
             tagline:
-                "IT Support & Digital Solutions"
+                "IT Support for Individuals & Small Businesses"
         }
 
     },
-
-
-    /* -------------------------------------------------
-       Dutch
-       ------------------------------------------------- */
-
     nl: {
 
+        flag: "🇳🇱",
+        code: "NL",
+        name: "Nederlands",
+
         site: {
-            title: "ITSupportRotterdam | IT Support & Digitale Oplossingen",
+            title: "ITSupportRotterdam | Praktische IT-ondersteuning",
             description:
-                "ITSupportRotterdam biedt praktische IT-ondersteuning, pc-onderhoud, probleemoplossing, hardware- en softwarediensten en professionele WebCV-creatie."
+                "ITSupportRotterdam biedt praktische IT-ondersteuning voor particulieren, professionals en kleine bedrijven in Rotterdam en omgeving."
         },
 
         nav: {
             home: "Home",
             services: "Diensten",
+            whyUs: "Waarom wij",
             about: "Over mij",
+            howItWorks: "Hoe het werkt",
             contact: "Contact"
         },
 
         cta: {
-            request: "Dienst aanvragen"
+            support: "IT-ondersteuning aanvragen"
         },
 
         hero: {
             eyebrow: "PRAKTISCHE IT-ONDERSTEUNING",
-            titleStart: "IT-oplossingen waarop u",
-            titleHighlight: "kunt vertrouwen.",
+            titleStart: "Praktische IT-ondersteuning",
+            titleHighlight: "Waarop u kunt vertrouwen",
             text:
-                "Praktische en betrouwbare IT-ondersteuning voor computers, software, hardware en dagelijkse technologieproblemen.",
-            request: "Dienst aanvragen",
+                "Betrouwbare IT-ondersteuning voor computers, software, hardware, netwerken en dagelijkse technologieproblemen in Rotterdam en omgeving.",
+            request: "IT-ondersteuning aanvragen",
             view: "Bekijk diensten"
         },
 
@@ -207,38 +248,50 @@ const translations = {
             eyebrow: "WAT IK AANBIED",
             title: "IT-diensten",
             text:
-                "Praktische technologische diensten voor thuisgebruikers, professionals en kleine bedrijven.",
+                "Praktische IT-ondersteuning voor particulieren, professionals en kleine bedrijven.",
 
             cards: {
 
-                support: {
-                    title: "IT-ondersteuning",
+                computer: {
+                    title: "Computer- & laptopondersteuning",
                     text:
-                        "Hulp bij dagelijkse computer-, software-, apparaat- en technologieproblemen."
+                        "Hulp bij computer- en laptopproblemen, Windows-problemen, prestatieproblemen en dagelijkse technische problemen."
                 },
 
-                maintenance: {
-                    title: "PC-onderhoud",
+                software: {
+                    title: "Windows, Microsoft Office & software",
                     text:
-                        "PC-reiniging, prestatiecontroles, updates en algemeen onderhoud."
+                        "Windows-installatie en configuratie, installatie van Microsoft Office, begeleiding bij licenties, updates en softwareproblemen."
                 },
 
                 hardware: {
-                    title: "Hardware & software",
+                    title: "Hardware, pc-upgrades & onderhoud",
                     text:
-                        "Hardware-upgrades, software-installatie, configuratie en updates."
+                        "Hardware-upgrades, vervanging van onderdelen, pc-onderhoud, prestatieverbeteringen en eenvoudige reparaties."
                 },
 
-                troubleshooting: {
-                    title: "Probleemoplossing",
+                network: {
+                    title: "Netwerk- & wifi-ondersteuning",
                     text:
-                        "Diagnose en oplossing van veelvoorkomende computer-, software- en apparaatproblemen."
+                        "Netwerkinstallatie voor thuis en kleine bedrijven, wifi-problemen, routerconfiguratie en verbindingsproblemen."
+                },
+
+                remote: {
+                    title: "IT-ondersteuning op afstand",
+                    text:
+                        "Hulp op afstand bij softwareproblemen, configuratie, probleemoplossing en dagelijkse IT-vragen."
+                },
+
+                migration: {
+                    title: "Apparaatinstallatie & gegevensmigratie",
+                    text:
+                        "Installatie van nieuwe computers, software-installatie, gegevensmigratie en apparaten voorbereiden voor dagelijks gebruik."
                 },
 
                 webcv: {
-                    title: "WebCV maken",
+                    title: "WebCV & digitale ondersteuning",
                     text:
-                        "Professionele persoonlijke CV-websites voor moderne sollicitaties."
+                        "Professionele WebCV-creatie en praktische digitale ondersteuning voor particulieren en werkzoekenden."
                 }
 
             }
@@ -248,23 +301,92 @@ const translations = {
             eyebrow: "OVER ITSupportRotterdam",
             title: "Technologie praktisch gemaakt.",
             p1:
-                "ITSupportRotterdam biedt praktische IT-ondersteuning en digitale diensten met aandacht voor duidelijke communicatie, betrouwbare oplossingen en professionele service.",
+                "ITSupportRotterdam biedt praktische IT-ondersteuning voor particulieren, thuisgebruikers en kleine bedrijven. Het doel is eenvoudig: het probleem begrijpen, de oplossing duidelijk uitleggen en ervoor zorgen dat uw technologie weer goed werkt.",
             p2:
-                "Van het oplossen van dagelijkse pc-problemen tot het maken van een professioneel WebCV: het doel is eenvoudig, technologie voor u laten werken."
+                "Met ervaring in IT-ondersteuning, computerhardware, softwareproblemen, netwerken en digitale technologie bied ik persoonlijke ondersteuning zonder onnodig technisch jargon."
+        },
+
+        whyUs: {
+            eyebrow: "WAAROM ITSupportRotterdam",
+            title: "Praktische ondersteuning met een persoonlijke aanpak.",
+            text:
+                "Persoonlijke IT-ondersteuning gericht op het daadwerkelijk oplossen van het probleem.",
+            cards: {
+                practical: {
+                    title: "Praktische IT-ondersteuning",
+                    text:
+                        "Duidelijke oplossingen gericht op het daadwerkelijke probleem."
+                },
+                communication: {
+                    title: "Duidelijke communicatie",
+                    text:
+                        "Ondersteuning beschikbaar in het Engels, Nederlands, Turks en Russisch."
+                },
+                personal: {
+                    title: "Persoonlijke service",
+                    text:
+                        "Directe en persoonlijke ondersteuning in plaats van een grote helpdesk."
+                },
+                remote: {
+                    title: "Ondersteuning op afstand & op locatie",
+                    text:
+                        "Op afstand of op locatie, afhankelijk van het probleem en de locatie."
+                },
+                jargon: {
+                    title: "Geen technisch jargon",
+                    text:
+                        "Duidelijke uitleg zonder onnodig ingewikkelde technische taal."
+                }
+            }
+        },
+
+        howItWorks: {
+            eyebrow: "HOE HET WERKT",
+            title: "Eenvoudig van begin tot eind.",
+            text:
+                "Een duidelijk proces om uw IT-probleem snel en praktisch op te lossen.",
+            steps: {
+                contact: {
+                    title: "Contact",
+                    text:
+                        "Vertel mij waarmee u hulp nodig heeft."
+                },
+                diagnose: {
+                    title: "Diagnose",
+                    text:
+                        "Ik identificeer het probleem en leg de beschikbare oplossing uit."
+                },
+                fix: {
+                    title: "Oplossen",
+                    text:
+                        "Het probleem wordt op afstand of op locatie opgelost, afhankelijk van de situatie."
+                },
+                followUp: {
+                    title: "Nazorg",
+                    text:
+                        "Controleren of alles goed werkt en eventuele resterende vragen beantwoorden."
+                }
+            }
+        },
+
+        serviceArea: {
+            eyebrow: "SERVICEGEBIED",
+            title: "IT-ondersteuning in Rotterdam & omgeving",
+            location:
+                "Gevestigd in Poortugaal, Rotterdam, en actief in de omliggende omgeving.",
+            free:
+                "Geen voorrijkosten in Poortugaal, Rhoon en Hoogvliet.",
+            other:
+                "Voor andere gebieden zijn de reiskosten inbegrepen in het servicetarief."
         },
 
         contact: {
             eyebrow: "NEEM CONTACT OP",
-            title: "IT-hulp nodig?",
+            title: "IT-hulp nodig? Laten we het oplossen.",
             text:
-                "Vertel mij waarmee u hulp nodig heeft en ik neem contact met u op.",
+                "Heeft u een computer-, software-, netwerk- of ander IT-probleem? Vertel mij waarmee u hulp nodig heeft en laten we samen een praktische oplossing vinden.",
             email: "E-mail mij",
-            whatsapp: "WhatsApp",
-    areaTitle: "SERVICEGEBIED & VOORRIJKOSTEN",
-    areaHeading: "Servicegebied & Voorrijkosten",
-    areaLocation: "Gevestigd in Poortugaal, Rotterdam.",
-    areaFree: "Geen voorrijkosten voor klanten in Poortugaal, Rhoon en Hoogvliet.",
-    areaOther: "Voor andere gebieden zijn de voorrijkosten inbegrepen in het servicetarief."
+            whatsapp: "WhatsApp"
         },
 
         form: {
@@ -277,9 +399,9 @@ const translations = {
             message: "Hoe kan ik helpen?",
             messagePlaceholder:
                 "Vertel mij waarmee u hulp nodig heeft...",
-            submit: "Aanvraag versturen",
+            submit: "Verzoek versturen",
             success:
-                "Bedankt. Uw serviceaanvraag is voorbereid."
+                "Bedankt. Uw serviceverzoek is verzonden."
         },
 
         menu: {
@@ -291,7 +413,7 @@ const translations = {
             copyright:
                 "© 2026 ITSupportRotterdam. Alle rechten voorbehouden.",
             tagline:
-                "IT-ondersteuning & Digitale Oplossingen"
+                "IT-ondersteuning voor particulieren & kleine bedrijven"
         }
 
     },
@@ -303,69 +425,87 @@ const translations = {
 
     tr: {
 
+        flag: "🇹🇷",
+        code: "TR",
+        name: "Türkçe",
+
         site: {
-            title: "ITSupportRotterdam | IT Desteği ve Dijital Çözümler",
+            title: "ITSupportRotterdam | Pratik IT Desteği",
             description:
-                "ITSupportRotterdam; pratik IT desteği, PC bakımı, sorun giderme, donanım ve yazılım hizmetleri ve profesyonel WebCV hazırlama hizmetleri sunar."
+                "ITSupportRotterdam, Rotterdam ve çevresinde bireysel kullanıcılar, profesyoneller ve küçük işletmeler için pratik IT desteği sunar."
         },
 
         nav: {
             home: "Ana Sayfa",
             services: "Hizmetler",
-            about: "Hakkımda",
+            whyUs: "Neden Biz",
+            about: "Hakkımızda",
+            howItWorks: "Nasıl Çalışır",
             contact: "İletişim"
         },
 
         cta: {
-            request: "Hizmet Talep Et"
+            support: "IT Desteği Alın"
         },
 
         hero: {
             eyebrow: "PRATİK IT DESTEĞİ",
             titleStart: "Güvenebileceğiniz",
-            titleHighlight: "IT çözümleri.",
+            titleHighlight: "Pratik IT Desteği",
             text:
-                "Bilgisayarlar, yazılım, donanım ve günlük teknoloji sorunları için pratik ve güvenilir IT desteği.",
-            request: "Hizmet Talep Et",
-            view: "Hizmetleri Gör"
+                "Rotterdam ve çevresinde bilgisayar, yazılım, donanım, ağ ve günlük teknoloji sorunları için güvenilir IT desteği.",
+            request: "IT Desteği Alın",
+            view: "Hizmetleri Görün"
         },
 
         services: {
-            eyebrow: "SUNDukLARIM",
+            eyebrow: "SUNDUKLARIM",
             title: "IT Hizmetleri",
             text:
-                "Ev kullanıcıları, profesyoneller ve küçük işletmeler için pratik teknoloji hizmetleri.",
+                "Bireysel kullanıcılar, profesyoneller ve küçük işletmeler için pratik IT desteği.",
 
             cards: {
 
-                support: {
-                    title: "IT Desteği",
+                computer: {
+                    title: "Bilgisayar ve Laptop Desteği",
                     text:
-                        "Günlük bilgisayar, yazılım, cihaz ve teknoloji sorunlarında destek."
+                        "Bilgisayar ve laptop sorunları, Windows problemleri, performans sorunları ve günlük teknik problemlerde yardım."
                 },
 
-                maintenance: {
-                    title: "PC Bakımı",
+                software: {
+                    title: "Windows, Microsoft Office ve Yazılım Desteği",
                     text:
-                        "PC temizliği, performans kontrolleri, güncellemeler ve genel bakım."
+                        "Windows kurulumu ve yapılandırması, Microsoft Office kurulumu, lisans konusunda rehberlik, güncellemeler ve yazılım sorunlarının giderilmesi."
                 },
 
                 hardware: {
-                    title: "Donanım & Yazılım",
+                    title: "Donanım, PC Yükseltme ve Bakım",
                     text:
-                        "Donanım yükseltmeleri, yazılım kurulumu, yapılandırma ve güncellemeler."
+                        "Donanım yükseltmeleri, parça değişimi, PC bakımı, performans iyileştirmeleri ve temel onarımlar."
                 },
 
-                troubleshooting: {
-                    title: "Sorun Giderme",
+                network: {
+                    title: "Ağ ve Wi-Fi Desteği",
                     text:
-                        "Yaygın bilgisayar, yazılım ve cihaz sorunlarının teşhisi ve çözümü."
+                        "Ev ve küçük işletme ağ kurulumu, Wi-Fi sorunları, router yapılandırması ve bağlantı problemlerinin giderilmesi."
+                },
+
+                remote: {
+                    title: "Uzaktan IT Desteği",
+                    text:
+                        "Yazılım sorunları, yapılandırma, problem çözme ve günlük IT ihtiyaçları için uzaktan destek."
+                },
+
+                migration: {
+                    title: "Cihaz Kurulumu ve Veri Taşıma",
+                    text:
+                        "Yeni bilgisayar kurulumu, yazılım yükleme, veri taşıma ve cihazları günlük kullanıma hazırlama."
                 },
 
                 webcv: {
-                    title: "WebCV Hazırlama",
+                    title: "WebCV ve Dijital Destek",
                     text:
-                        "Modern iş başvuruları için profesyonel kişisel CV web siteleri."
+                        "Bireysel kullanıcılar ve iş arayanlar için profesyonel WebCV oluşturma ve pratik dijital destek."
                 }
 
             }
@@ -375,23 +515,92 @@ const translations = {
             eyebrow: "ITSupportRotterdam HAKKINDA",
             title: "Teknolojiyi pratik hale getiriyoruz.",
             p1:
-                "ITSupportRotterdam; açık iletişim, güvenilir çözümler ve profesyonel hizmet anlayışına odaklanan pratik IT desteği ve dijital hizmetler sunar.",
+                "ITSupportRotterdam; bireysel kullanıcılar, ev kullanıcıları ve küçük işletmeler için pratik IT desteği sunar. Amaç basit: sorunu anlamak, çözümü açıkça anlatmak ve teknolojinizin yeniden düzgün çalışmasını sağlamak.",
             p2:
-                "Günlük PC sorunlarını çözmekten profesyonel bir WebCV hazırlamaya kadar amaç basit: teknolojinin sizin için çalışmasını sağlamak."
+                "IT desteği, bilgisayar donanımı, yazılım sorunlarının giderilmesi, ağlar ve dijital teknoloji alanlarındaki deneyimimle, gereksiz teknik jargon kullanmadan kişisel destek sunuyorum."
+        },
+
+        whyUs: {
+            eyebrow: "NEDEN ITSupportRotterdam",
+            title: "Kişisel yaklaşımla pratik destek.",
+            text:
+                "Asıl sorunu çözmeye odaklanan kişisel ve pratik IT desteği.",
+            cards: {
+                practical: {
+                    title: "Pratik IT Desteği",
+                    text:
+                        "Asıl problemi çözmeye odaklanan doğrudan ve uygulanabilir çözümler."
+                },
+                communication: {
+                    title: "Açık İletişim",
+                    text:
+                        "İngilizce, Hollandaca, Türkçe ve Rusça destek."
+                },
+                personal: {
+                    title: "Kişisel Hizmet",
+                    text:
+                        "Büyük bir yardım masası yerine doğrudan ve kişisel destek."
+                },
+                remote: {
+                    title: "Uzaktan ve Yerinde Destek",
+                    text:
+                        "Soruna ve konuma bağlı olarak uzaktan veya yerinde destek."
+                },
+                jargon: {
+                    title: "Teknik Jargon Yok",
+                    text:
+                        "Gereksiz teknik ifadeler kullanmadan açık ve anlaşılır açıklamalar."
+                }
+            }
+        },
+
+        howItWorks: {
+            eyebrow: "NASIL ÇALIŞIR",
+            title: "Başlangıçtan sona kadar basit.",
+            text:
+                "IT sorununuzun çözülmesini sağlamak için basit ve anlaşılır bir süreç.",
+            steps: {
+                contact: {
+                    title: "İletişim",
+                    text:
+                        "Hangi konuda yardıma ihtiyacınız olduğunu anlatın."
+                },
+                diagnose: {
+                    title: "Teşhis",
+                    text:
+                        "Sorunu belirliyor ve mevcut çözümü açıklıyorum."
+                },
+                fix: {
+                    title: "Çözüm",
+                    text:
+                        "Duruma göre sorun uzaktan veya yerinde çözülür."
+                },
+                followUp: {
+                    title: "Takip",
+                    text:
+                        "Her şeyin düzgün çalıştığından emin oluyor ve kalan sorularınızı yanıtlıyorum."
+                }
+            }
+        },
+
+        serviceArea: {
+            eyebrow: "HİZMET BÖLGESİ",
+            title: "Rotterdam ve Çevresinde IT Desteği",
+            location:
+                "Poortugaal, Rotterdam merkezliyim ve çevre bölgelerde pratik IT desteği sunuyorum.",
+            free:
+                "Poortugaal, Rhoon ve Hoogvliet için ulaşım ücreti alınmaz.",
+            other:
+                "Diğer bölgelerde ulaşım masrafları hizmet ücretine dahildir."
         },
 
         contact: {
             eyebrow: "İLETİŞİME GEÇİN",
-            title: "IT desteğine mi ihtiyacınız var?",
+            title: "IT desteğine mi ihtiyacınız var? Birlikte çözelim.",
             text:
-                "Neye ihtiyacınız olduğunu yazın, sizinle iletişime geçeyim.",
-            email: "E-posta gönder",
-            whatsapp: "WhatsApp",
-    areaTitle: "HİZMET BÖLGESİ & ULAŞIM",
-    areaHeading: "Hizmet Bölgesi & Ulaşım",
-    areaLocation: "Poortugaal, Rotterdam merkezliyiz.",
-    areaFree: "Poortugaal, Rhoon ve Hoogvliet bölgelerindeki müşterilerimizden ulaşım ücreti alınmaz.",
-    areaOther: "Diğer bölgelerde ulaşım masrafları servis ücretine dahildir."
+                "Bilgisayar, yazılım, ağ veya başka bir IT sorununuz mu var? Neye ihtiyacınız olduğunu anlatın ve pratik bir çözüm bulalım.",
+            email: "E-posta Gönder",
+            whatsapp: "WhatsApp"
         },
 
         form: {
@@ -400,13 +609,13 @@ const translations = {
             email: "E-posta",
             emailPlaceholder: "E-posta adresiniz",
             service: "Hizmet",
-            selectService: "Hizmet seçin",
+            selectService: "Bir hizmet seçin",
             message: "Nasıl yardımcı olabilirim?",
             messagePlaceholder:
                 "Neye ihtiyacınız olduğunu yazın...",
             submit: "Talep Gönder",
             success:
-                "Teşekkürler. Hizmet talebiniz hazırlanmıştır."
+                "Teşekkürler. Hizmet talebiniz gönderildi."
         },
 
         menu: {
@@ -418,7 +627,7 @@ const translations = {
             copyright:
                 "© 2026 ITSupportRotterdam. Tüm hakları saklıdır.",
             tagline:
-                "IT Desteği & Dijital Çözümler"
+                "Bireysel Kullanıcılar ve Küçük İşletmeler için IT Desteği"
         }
 
     },
@@ -430,30 +639,36 @@ const translations = {
 
     ru: {
 
+        flag: "🇷🇺",
+        code: "RU",
+        name: "Русский",
+
         site: {
-            title: "ITSupportRotterdam | IT-поддержка и цифровые решения",
+            title: "ITSupportRotterdam | Практическая IT-поддержка",
             description:
-                "ITSupportRotterdam предоставляет практическую IT-поддержку, обслуживание ПК, диагностику, услуги по оборудованию и программному обеспечению, а также создание профессиональных WebCV."
+                "ITSupportRotterdam предоставляет практическую IT-поддержку частным пользователям, специалистам и малому бизнесу в Роттердаме и окрестностях."
         },
 
         nav: {
             home: "Главная",
             services: "Услуги",
-            about: "Обо мне",
+            whyUs: "Почему мы",
+            about: "О нас",
+            howItWorks: "Как это работает",
             contact: "Контакты"
         },
 
         cta: {
-            request: "Запросить услугу"
+            support: "Получить IT-поддержку"
         },
 
         hero: {
             eyebrow: "ПРАКТИЧЕСКАЯ IT-ПОДДЕРЖКА",
-            titleStart: "IT-решения, на которые вы",
-            titleHighlight: "можете положиться.",
+            titleStart: "Практическая IT-поддержка,",
+            titleHighlight: "на которую можно рассчитывать",
             text:
-                "Практичная и надежная IT-поддержка для компьютеров, программного обеспечения, оборудования и повседневных технических проблем.",
-            request: "Запросить услугу",
+                "Надёжная IT-поддержка компьютеров, программного обеспечения, оборудования, сетей и повседневных технических проблем в Роттердаме и окрестностях.",
+            request: "Получить IT-поддержку",
             view: "Посмотреть услуги"
         },
 
@@ -461,38 +676,50 @@ const translations = {
             eyebrow: "ЧТО Я ПРЕДЛАГАЮ",
             title: "IT-услуги",
             text:
-                "Практические технологические услуги для частных пользователей, специалистов и малого бизнеса.",
+                "Практическая IT-поддержка для частных пользователей, специалистов и малого бизнеса.",
 
             cards: {
 
-                support: {
-                    title: "IT-поддержка",
+                computer: {
+                    title: "Поддержка компьютеров и ноутбуков",
                     text:
-                        "Помощь с повседневными проблемами компьютеров, программ, устройств и технологий."
+                        "Помощь с компьютерами и ноутбуками, проблемами Windows, производительностью и повседневными техническими трудностями."
                 },
 
-                maintenance: {
-                    title: "Обслуживание ПК",
+                software: {
+                    title: "Windows, Microsoft Office и программное обеспечение",
                     text:
-                        "Очистка ПК, проверка производительности, обновления и общее обслуживание."
+                        "Установка и настройка Windows, установка Microsoft Office, консультации по лицензиям, обновления и устранение проблем с программами."
                 },
 
                 hardware: {
-                    title: "Оборудование и ПО",
+                    title: "Оборудование, модернизация ПК и обслуживание",
                     text:
-                        "Модернизация оборудования, установка программ, настройка и обновления."
+                        "Модернизация оборудования, замена компонентов, обслуживание ПК, повышение производительности и базовый ремонт."
                 },
 
-                troubleshooting: {
-                    title: "Диагностика и устранение проблем",
+                network: {
+                    title: "Поддержка сети и Wi-Fi",
                     text:
-                        "Диагностика и решение распространенных проблем компьютеров, программ и устройств."
+                        "Настройка домашних и небольших офисных сетей, проблемы с Wi-Fi, настройка маршрутизатора и устранение проблем с подключением."
+                },
+
+                remote: {
+                    title: "Удалённая IT-поддержка",
+                    text:
+                        "Удалённая помощь с программами, настройками, устранением неполадок и повседневными IT-вопросами."
+                },
+
+                migration: {
+                    title: "Настройка устройств и перенос данных",
+                    text:
+                        "Настройка нового компьютера, установка программ, перенос данных и подготовка устройств к повседневному использованию."
                 },
 
                 webcv: {
-                    title: "Создание WebCV",
+                    title: "WebCV и цифровая поддержка",
                     text:
-                        "Профессиональные персональные CV-сайты для современных заявок на работу."
+                        "Создание профессионального WebCV и практическая цифровая поддержка для частных пользователей и соискателей."
                 }
 
             }
@@ -500,31 +727,100 @@ const translations = {
 
         about: {
             eyebrow: "О ITSupportRotterdam",
-            title: "Технологии — просто и практично.",
+            title: "Технологии должны быть понятными и практичными.",
             p1:
-                "ITSupportRotterdam предоставляет практическую IT-поддержку и цифровые услуги с акцентом на понятное общение, надежные решения и профессиональный сервис.",
+                "ITSupportRotterdam предоставляет практическую IT-поддержку частным пользователям, домашним пользователям и малому бизнесу. Цель проста: понять проблему, ясно объяснить решение и помочь вернуть технологии в рабочее состояние.",
             p2:
-                "От решения повседневных проблем ПК до создания профессионального WebCV — цель проста: сделать технологии полезными для вас."
+                "Имея опыт в IT-поддержке, компьютерном оборудовании, устранении программных проблем, сетях и цифровых технологиях, я предоставляю персональную помощь без ненужного технического жаргона."
+        },
+
+        whyUs: {
+            eyebrow: "ПОЧЕМУ ITSupportRotterdam",
+            title: "Практическая поддержка с индивидуальным подходом.",
+            text:
+                "Персональная IT-поддержка, ориентированная на реальное решение проблемы.",
+            cards: {
+                practical: {
+                    title: "Практическая IT-поддержка",
+                    text:
+                        "Понятные решения, направленные непосредственно на устранение проблемы."
+                },
+                communication: {
+                    title: "Понятное общение",
+                    text:
+                        "Поддержка на английском, нидерландском, турецком и русском языках."
+                },
+                personal: {
+                    title: "Персональный сервис",
+                    text:
+                        "Прямая и персональная помощь вместо большой службы поддержки."
+                },
+                remote: {
+                    title: "Удалённая и выездная поддержка",
+                    text:
+                        "Удалённая или выездная помощь в зависимости от проблемы и местоположения."
+                },
+                jargon: {
+                    title: "Без технического жаргона",
+                    text:
+                        "Понятные объяснения без ненужных сложных технических терминов."
+                }
+            }
+        },
+
+        howItWorks: {
+            eyebrow: "КАК ЭТО РАБОТАЕТ",
+            title: "Просто от начала до конца.",
+            text:
+                "Простой и понятный процесс, направленный на решение вашей IT-проблемы.",
+            steps: {
+                contact: {
+                    title: "Контакт",
+                    text:
+                        "Расскажите, с чем вам нужна помощь."
+                },
+                diagnose: {
+                    title: "Диагностика",
+                    text:
+                        "Я определяю проблему и объясняю доступное решение."
+                },
+                fix: {
+                    title: "Решение",
+                    text:
+                        "Проблема решается удалённо или на месте, в зависимости от ситуации."
+                },
+                followUp: {
+                    title: "Контроль",
+                    text:
+                        "Проверяю, что всё работает правильно, и отвечаю на оставшиеся вопросы."
+                }
+            }
+        },
+
+        serviceArea: {
+            eyebrow: "ЗОНА ОБСЛУЖИВАНИЯ",
+            title: "IT-поддержка в Роттердаме и окрестностях",
+            location:
+                "Я нахожусь в Poortugaal, Роттердам, и предоставляю практическую IT-поддержку в близлежащих районах.",
+            free:
+                "Без дополнительной платы за выезд в Poortugaal, Rhoon и Hoogvliet.",
+            other:
+                "Для других районов расходы на поездку включены в стоимость услуги."
         },
 
         contact: {
             eyebrow: "СВЯЖИТЕСЬ СО МНОЙ",
-            title: "Нужна IT-помощь?",
+            title: "Нужна IT-помощь? Давайте решим проблему.",
             text:
-                "Расскажите, с чем вам нужна помощь, и я свяжусь с вами.",
-            email: "Написать по e-mail",
-            whatsapp: "WhatsApp",
-    areaTitle: "ЗОНА ОБСЛУЖИВАНИЯ И ВЫЕЗД",
-    areaHeading: "Зона обслуживания и выезд",
-    areaLocation: "Мы работаем из Poortugaal, Rotterdam.",
-    areaFree: "Для клиентов в Poortugaal, Rhoon и Hoogvliet выезд бесплатный.",
-    areaOther: "Для других районов транспортные расходы включены в стоимость услуги."
+                "Возникла проблема с компьютером, программным обеспечением, сетью или другой IT-технологией? Расскажите, что вам нужно, и мы найдём практичное решение.",
+            email: "Написать на e-mail",
+            whatsapp: "WhatsApp"
         },
 
         form: {
             name: "Имя",
             namePlaceholder: "Ваше имя",
-            email: "Email",
+            email: "E-mail",
             emailPlaceholder: "Ваш адрес электронной почты",
             service: "Услуга",
             selectService: "Выберите услугу",
@@ -533,7 +829,7 @@ const translations = {
                 "Расскажите, с чем вам нужна помощь...",
             submit: "Отправить запрос",
             success:
-                "Спасибо. Ваш запрос на услугу подготовлен."
+                "Спасибо. Ваш запрос на обслуживание отправлен."
         },
 
         menu: {
@@ -545,7 +841,7 @@ const translations = {
             copyright:
                 "© 2026 ITSupportRotterdam. Все права защищены.",
             tagline:
-                "IT-поддержка и цифровые решения"
+                "IT-поддержка для частных пользователей и малого бизнеса"
         }
 
     },
@@ -557,30 +853,36 @@ const translations = {
 
     uk: {
 
+        flag: "🇺🇦",
+        code: "UK",
+        name: "Українська",
+
         site: {
-            title: "ITSupportRotterdam | IT-підтримка та цифрові рішення",
+            title: "ITSupportRotterdam | Практична IT-підтримка",
             description:
-                "ITSupportRotterdam надає практичну IT-підтримку, обслуговування ПК, діагностику, послуги з обладнання та програмного забезпечення, а також створення професійних WebCV."
+                "ITSupportRotterdam надає практичну IT-підтримку приватним користувачам, професіоналам і малому бізнесу в Роттердамі та околицях."
         },
 
         nav: {
             home: "Головна",
             services: "Послуги",
+            whyUs: "Чому ми",
             about: "Про мене",
+            howItWorks: "Як це працює",
             contact: "Контакти"
         },
 
         cta: {
-            request: "Замовити послугу"
+            support: "Отримати IT-підтримку"
         },
 
         hero: {
             eyebrow: "ПРАКТИЧНА IT-ПІДТРИМКА",
-            titleStart: "IT-рішення, на які ви",
-            titleHighlight: "можете покластися.",
+            titleStart: "Практична IT-підтримка,",
+            titleHighlight: "на яку можна покластися",
             text:
-                "Практична та надійна IT-підтримка для комп’ютерів, програмного забезпечення, обладнання та повсякденних технічних проблем.",
-            request: "Замовити послугу",
+                "Надійна IT-підтримка для комп'ютерів, програмного забезпечення, обладнання, мереж і повсякденних технологічних проблем у Роттердамі та околицях.",
+            request: "Отримати IT-підтримку",
             view: "Переглянути послуги"
         },
 
@@ -588,38 +890,50 @@ const translations = {
             eyebrow: "ЩО Я ПРОПОНУЮ",
             title: "IT-послуги",
             text:
-                "Практичні технологічні послуги для домашніх користувачів, фахівців і малого бізнесу.",
+                "Практична IT-підтримка для приватних користувачів, професіоналів і малого бізнесу.",
 
             cards: {
 
-                support: {
-                    title: "IT-підтримка",
+                computer: {
+                    title: "Підтримка комп'ютерів і ноутбуків",
                     text:
-                        "Допомога з повсякденними проблемами комп’ютерів, програм, пристроїв і технологій."
+                        "Допомога з проблемами комп'ютерів і ноутбуків, Windows, продуктивністю та повсякденними технічними труднощами."
                 },
 
-                maintenance: {
-                    title: "Обслуговування ПК",
+                software: {
+                    title: "Windows, Microsoft Office та програмне забезпечення",
                     text:
-                        "Очищення ПК, перевірка продуктивності, оновлення та загальне обслуговування."
+                        "Встановлення та налаштування Windows, встановлення Microsoft Office, консультації щодо ліцензій, оновлення та усунення проблем із програмами."
                 },
 
                 hardware: {
-                    title: "Обладнання та програмне забезпечення",
+                    title: "Обладнання, модернізація ПК та обслуговування",
                     text:
-                        "Модернізація обладнання, встановлення програм, налаштування та оновлення."
+                        "Модернізація обладнання, заміна компонентів, обслуговування ПК, покращення продуктивності та базовий ремонт."
                 },
 
-                troubleshooting: {
-                    title: "Діагностика та усунення несправностей",
+                network: {
+                    title: "Підтримка мережі та Wi-Fi",
                     text:
-                        "Діагностика та вирішення поширених проблем комп’ютерів, програм і пристроїв."
+                        "Налаштування домашніх і невеликих офісних мереж, проблеми з Wi-Fi, налаштування маршрутизатора та усунення проблем із підключенням."
+                },
+
+                remote: {
+                    title: "Віддалена IT-підтримка",
+                    text:
+                        "Віддалена допомога з програмами, налаштуваннями, усуненням несправностей і повсякденними IT-питаннями."
+                },
+
+                migration: {
+                    title: "Налаштування пристроїв та перенесення даних",
+                    text:
+                        "Налаштування нового комп'ютера, встановлення програм, перенесення даних і підготовка пристроїв до повсякденного використання."
                 },
 
                 webcv: {
-                    title: "Створення WebCV",
+                    title: "WebCV та цифрова підтримка",
                     text:
-                        "Професійні персональні CV-сайти для сучасного пошуку роботи."
+                        "Створення професійного WebCV і практична цифрова підтримка для приватних користувачів та шукачів роботи."
                 }
 
             }
@@ -627,40 +941,120 @@ const translations = {
 
         about: {
             eyebrow: "ПРО ITSupportRotterdam",
-            title: "Технології — просто й практично.",
+            title: "Технології — просто та практично.",
             p1:
-                "ITSupportRotterdam надає практичну IT-підтримку та цифрові послуги з акцентом на зрозуміле спілкування, надійні рішення та професійний сервіс.",
+                "ITSupportRotterdam надає практичну IT-підтримку приватним користувачам, домашнім користувачам і малому бізнесу. Мета проста: зрозуміти проблему, чітко пояснити рішення та допомогти повернути технології до нормальної роботи.",
             p2:
-                "Від вирішення повсякденних проблем ПК до створення професійного WebCV — мета проста: зробити технології корисними для вас."
+                "Маючи досвід у сфері IT-підтримки, комп'ютерного обладнання, усунення проблем із програмним забезпеченням, мереж і цифрових технологій, я надаю персональну допомогу без зайвого технічного жаргону."
+        },
+
+        whyUs: {
+            eyebrow: "ЧОМУ ITSupportRotterdam",
+            title: "Практична підтримка з персональним підходом.",
+            text:
+                "Персональна IT-підтримка, зосереджена на реальному вирішенні проблеми.",
+            cards: {
+
+                practical: {
+                    title: "Практична IT-підтримка",
+                    text:
+                        "Зрозумілі рішення, спрямовані безпосередньо на вирішення проблеми."
+                },
+
+                communication: {
+                    title: "Зрозуміле спілкування",
+                    text:
+                        "Підтримка англійською, нідерландською, турецькою та російською мовами."
+                },
+
+                personal: {
+                    title: "Персональний сервіс",
+                    text:
+                        "Пряма та персональна допомога замість великої служби підтримки."
+                },
+
+                remote: {
+                    title: "Віддалена та виїзна підтримка",
+                    text:
+                        "Віддалена або виїзна допомога залежно від проблеми та місцезнаходження."
+                },
+
+                jargon: {
+                    title: "Без технічного жаргону",
+                    text:
+                        "Зрозумілі пояснення без зайвих складних технічних термінів."
+                }
+
+            }
+        },
+
+        howItWorks: {
+            eyebrow: "ЯК ЦЕ ПРАЦЮЄ",
+            title: "Просто від початку до кінця.",
+            text:
+                "Простий і зрозумілий процес, спрямований на вирішення вашої IT-проблеми.",
+            steps: {
+
+                contact: {
+                    title: "Контакт",
+                    text:
+                        "Розкажіть, з чим вам потрібна допомога."
+                },
+
+                diagnose: {
+                    title: "Діагностика",
+                    text:
+                        "Я визначаю проблему та пояснюю доступне рішення."
+                },
+
+                fix: {
+                    title: "Вирішення",
+                    text:
+                        "Проблема вирішується віддалено або на місці, залежно від ситуації."
+                },
+
+                followUp: {
+                    title: "Подальша підтримка",
+                    text:
+                        "Перевіряю, що все працює належним чином, і відповідаю на додаткові запитання."
+                }
+
+            }
+        },
+
+        serviceArea: {
+            eyebrow: "ЗОНА ОБСЛУГОВУВАННЯ",
+            title: "IT-підтримка в Роттердамі та околицях",
+            location:
+                "Я перебуваю в Poortugaal, Роттердам, і надаю практичну IT-підтримку в навколишніх районах.",
+            free:
+                "Без плати за виїзд у Poortugaal, Rhoon та Hoogvliet.",
+            other:
+                "Для інших районів витрати на поїздку включені у вартість послуги."
         },
 
         contact: {
-            eyebrow: "ЗВ’ЯЖІТЬСЯ ЗІ МНОЮ",
-            title: "Потрібна IT-допомога?",
+            eyebrow: "ЗВ'ЯЖІТЬСЯ ЗІ МНОЮ",
+            title: "Потрібна IT-допомога? Давайте вирішимо проблему.",
             text:
-                "Розкажіть, з чим вам потрібна допомога, і я зв’яжуся з вами.",
+                "Виникла проблема з комп'ютером, програмним забезпеченням, мережею або іншою IT-технологією? Розкажіть, що вам потрібно, і ми знайдемо практичне рішення.",
             email: "Написати на e-mail",
-            whatsapp: "WhatsApp",
-    areaTitle: "ЗОНА ОБСЛУГОВУВАННЯ ТА ВИЇЗД",
-    areaHeading: "Зона обслуговування та виїзд",
-    areaLocation: "Ми працюємо з Poortugaal, Rotterdam.",
-    areaFree: "Для клієнтів у Poortugaal, Rhoon та Hoogvliet виїзд безкоштовний.",
-    areaOther: "Для інших районів витрати на виїзд включені у вартість послуги."
+            whatsapp: "WhatsApp"
         },
 
         form: {
-            name: "Ім’я",
-            namePlaceholder: "Ваше ім’я",
-            email: "Email",
-            emailPlaceholder: "Ваша електронна адреса",
+            name: "Ім'я",
+            namePlaceholder: "Ваше ім'я",
+            email: "E-mail",
+            emailPlaceholder: "Ваша адреса електронної пошти",
             service: "Послуга",
-            selectService: "Виберіть послугу",
+            selectService: "Оберіть послугу",
             message: "Чим я можу допомогти?",
             messagePlaceholder:
                 "Розкажіть, з чим вам потрібна допомога...",
             submit: "Надіслати запит",
             success:
-                "Дякую. Ваш запит на послугу підготовлено."
+                "Дякуємо. Ваш запит на обслуговування надіслано."
         },
 
         menu: {
@@ -672,7 +1066,7 @@ const translations = {
             copyright:
                 "© 2026 ITSupportRotterdam. Усі права захищені.",
             tagline:
-                "IT-підтримка та цифрові рішення"
+                "IT-підтримка для приватних користувачів і малого бізнесу"
         }
 
     }
@@ -728,7 +1122,7 @@ function getTranslation(object, path) {
 function applyTranslations(lang) {
 
     const translation =
-        translations[lang] || translations.en;
+        languages[lang] || languages.en;
 
     /* HTML language */
 
@@ -988,9 +1382,9 @@ if (menuToggle && mainNav) {
 
 
             const translation =
-                translations[
+                languages[
                     document.documentElement.lang
-                ] || translations.en;
+                ] || languages.en;
 
             menuToggle.setAttribute(
                 "aria-label",
@@ -1028,9 +1422,9 @@ if (menuToggle && mainNav) {
                 );
 
                 const translation =
-                    translations[
+                    languages[
                         document.documentElement.lang
-                    ] || translations.en;
+                    ] || languages.en;
 
                 menuToggle.setAttribute(
                     "aria-label",
@@ -1100,9 +1494,9 @@ document.addEventListener(
 
 
             const translation =
-                translations[
+                languages[
                     document.documentElement.lang
-                ] || translations.en;
+                ] || languages.en;
 
             menuToggle.setAttribute(
                 "aria-label",
@@ -1143,9 +1537,9 @@ window.addEventListener(
 
 
             const translation =
-                translations[
+                languages[
                     document.documentElement.lang
-                ] || translations.en;
+                ] || languages.en;
 
             menuToggle.setAttribute(
                 "aria-label",
