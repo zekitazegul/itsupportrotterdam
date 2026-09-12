@@ -504,6 +504,7 @@ letter-spacing: -0.055em;
 
 .hero-highlight {
 color: var(--blue);
+display: block;
 }
 
 .hero-text {
@@ -1360,3 +1361,4 @@ Small Mobile
     }
 
 }
+
