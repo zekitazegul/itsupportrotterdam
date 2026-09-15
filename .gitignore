@@ -2,3 +2,10 @@
 .vscode/
 css/style.css.bak
 js/script.js.bak
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
